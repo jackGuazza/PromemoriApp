@@ -65,4 +65,4 @@ def search(titolo):
 
 if __name__ == "app":
     app.run(HOST_NAME, HOST_PORT)
-    print("Server avviato con successo !")
+    print("Server avviato con successo ! ")
