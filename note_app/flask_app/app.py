@@ -27,7 +27,7 @@ def index():
         data = dict(request.form)
         posts = search(data["search"])
     else:
-        posts = conn.execute('SELECT * FROM posts').fetchall() #lista
+        posts = conn.execute('SELECT * FROM posts').fetchall() #lista di post
         conn.close()
     return render_template('index.html', posts=posts)
 
